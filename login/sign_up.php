@@ -44,7 +44,7 @@
 
         <p class="mt-10 text-center text-sm text-gray-500">
             Already have an account?
-            <a href="index.php" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign in here</a>
+            <a href="login.php" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign in here</a>
         </p>
     </div>
 </div>
