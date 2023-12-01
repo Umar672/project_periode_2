@@ -1,6 +1,3 @@
-<?php
-require_once 'db/db_conn.php';
-?>
 
 <!DOCTYPE html>
 <html class="h-full bg-white">
@@ -13,7 +10,7 @@ require_once 'db/db_conn.php';
 
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-        <img class="mx-auto h-25 w-auto" src="Gemeente-rotterdam-removebg-preview.png" alt="Your Company">
+        <img class="mx-auto h-25 w-auto" src="images/Gemeentelogo.png" alt="Your Company">
 
         <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Create an account</h2>
     </div>
