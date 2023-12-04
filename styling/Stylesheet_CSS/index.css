@@ -1,0 +1,362 @@
+/* STANDARD THINGS IN OUR PROJECT*/
+/*
+for the hover effects:
+color; rgba(0, 110, 50, 1)
+font: bolder in the navbar
+*/
+
+
+
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Your Font', sans-serif;
+}
+
+/* NAVBAR */
+
+.secondary-navbar {
+    background-color: rgba(239, 244, 246, 1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.search, .contact, .translate {
+    width: 60px;
+    height: 30px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-navbar {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(202, 214, 218, 1);
+}
+
+.logo {
+    width: auto; /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+.nav-titles {
+    display: flex;
+}
+
+.title {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.with-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.with-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* CONTENT PAGES */
+
+/* 1st contents */
+
+.first-index-card {
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-half {
+    position: relative;
+}
+
+.top-half img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bottom-half {
+    background-color: rgba(0, 129, 31, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container,
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 129, 31, 0.4);
+}
+
+.title-section h2 {
+    color: white;
+}
+
+.search-bar {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-right,
+.bottom-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right h2 {
+    color: white;
+    padding: 10px;
+}
+
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-with-dot {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bottom-container {
+    display: flex;
+}
+
+.top-right,
+.bottom-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right h2,
+.bottom-right h2 {
+    color: white;
+    margin: 20px 0; /* Adjust the margin as needed */
+    padding: 10px;
+}
+
+.line-with-dot {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* 2nd contents */
+
+.second-index-card {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Add left margin */
+    margin-right: 20px; /* Add right margin */
+}
+
+.second-index-card .top-half {
+    position: relative;
+}
+
+.second-index-card .top-half img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.second-index-card .bottom-half {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-index-card .title-container {
+    display: flex;
+    flex-direction: column; /* Change to column */
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 129, 31, 0.4);
+}
+
+.second-index-card h2 {
+    color: white;
+    margin: 0;
+}
+
+.second-index-card .sub-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.second-index-card .sub-card {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.second-index-card .sub-card h3 {
+    color: #333;
+}
+
+.second-index-card .sub-card p {
+    color: #666;
+}
+
+/* 3rd contents */
+
+.third-index-background {
+    background-color: rgba(225, 239, 226, 1);
+}
+
+.third-index-card {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: 50px; /* Add left margin */
+    margin-right: 50px; /* Add right margin */
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.top-section h2 {
+    margin: 0;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 10px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.column p.date {
+    margin: 5px 0;
+}
+
+.column h3,
+.column p.column-text {
+    margin: 2px 0;
+}
+
+/* FOOTER */
+
+.footer-background {
+    background-color: rgba(0, 129, 31, 1);
+}
+
+.footer {
+    padding: 40px 20px; /* 40px distance from the top with left and right margins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white-line {
+    flex: 1; /* Takes remaining space */
+    border-top: 2px solid #fff; /* White line for garnish */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-titles {
+    margin-right: 20px; /* Margin on the right side of the titles */
+}
+
+.footer-titles h3 {
+    margin: 0;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+
+
