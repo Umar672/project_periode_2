@@ -9,7 +9,7 @@
     <style>
         #secondary_navbar_dashboard {
             padding: 50px 0px 50px 500px;
-            background: lightgreen;
+            background: #00811F;
         }
 
         #secondary_navbar_dashboard ul {
@@ -52,6 +52,45 @@
             }
         }
 
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card_1,
+        .card_2,
+        .card_3 {
+            border: 1px solid #ddd; /* Add a border for better visualization */
+            border-radius: 8px; /* Optional: Add border radius for a rounded look */
+            overflow: hidden; /* Optional: Hide overflow if content overflows */
+        }
+
+        .centered {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Optional: Add border-radius for rounded image */
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
     </style>
 
 </head>
@@ -63,7 +102,7 @@
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <img class="h-29 w-21" src="images/Gemeentelogo.png" alt="Your Company">
+                        <img class="h-29 w-21" src="images/Gemeentelogo.png" alt="logo">
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
@@ -211,9 +250,34 @@
         </div>
     </header>
     <main>
-        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-            <!-- Your content -->
+        <div class="container">
+            <div class="card_1">
+                <div class="centered">
+                    <img src="img_avatar2.png" alt="Avatar woman">
+                    <h2>Jane Flex</h2>
+                    <p>Some text.</p>
+                </div>
+            </div>
+
+            <div class="card_2">
+                <div class="centered">
+                    <img src="img_avatar2.png" alt="Avatar woman">
+                    <h2>Jane Flex</h2>
+                    <p>Some text.</p>
+                </div>
+            </div>
+
+            <div class="card_3">
+                <div class="centered">
+                    <img src="img_avatar2.png" alt="Avatar woman">
+                    <h2>Jane Flex</h2>
+                    <p>Some text.</p>
+                </div>
+            </div>
         </div>
+
+
+
     </main>
 </div>
 
